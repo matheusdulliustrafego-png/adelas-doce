@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Delas Doce — identidade oficial */
+  --color-berry: #e6395a;
+  --color-berry-dark: #c22345;
+  --color-berry-light: #ff8fa3;
+  --color-pink: #f4a6b8;
+  --color-pink-soft: #fdedf1;
+  --color-pink-softer: #fff6f8;
+  --color-cream: #fffaf5;
+  --color-cocoa: #3a2420;
+  --color-cocoa-soft: #6b4c46;
+  --color-whatsapp: #25d366;
+  --color-whatsapp-dark: #1ebe5b;
+  --color-gold: #d9a441;
+
+  --background: var(--color-cream);
+  --foreground: var(--color-cocoa);
+
+  --radius: 1.25rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-berry: var(--color-berry);
+  --color-berry-dark: var(--color-berry-dark);
+  --color-berry-light: var(--color-berry-light);
+  --color-pink: var(--color-pink);
+  --color-pink-soft: var(--color-pink-soft);
+  --color-pink-softer: var(--color-pink-softer);
+  --color-cream: var(--color-cream);
+  --color-cocoa: var(--color-cocoa);
+  --color-cocoa-soft: var(--color-cocoa-soft);
+  --color-whatsapp: var(--color-whatsapp);
+  --color-whatsapp-dark: var(--color-whatsapp-dark);
+  --color-gold: var(--color-gold);
+
+  --font-heading: var(--font-fraunces);
+  --font-sans: var(--font-jakarta);
+
+  --radius-sm: calc(var(--radius) - 0.65rem);
+  --radius-md: calc(var(--radius) - 0.4rem);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 0.5rem);
+  --radius-2xl: calc(var(--radius) + 1rem);
+
+  --animate-fade-in: fade-in 0.7s ease-out both;
+  --animate-fade-in-up: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-sway: sway 5s ease-in-out infinite;
+  --animate-sway-slow: sway 7s ease-in-out infinite;
+  --animate-pop: pop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+  --animate-marquee: marquee 32s linear infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(-4deg) translateY(0);
+  }
+  50% {
+    transform: rotate(4deg) translateY(-6px);
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-berry/10;
+  }
+  html {
+    @apply font-sans scroll-smooth;
+    color-scheme: light;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: url("/patterns/strawberries.svg");
+    background-repeat: repeat;
+    background-size: 240px 240px;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading;
+  }
+}
+
+::selection {
+  background: var(--color-berry);
+  color: var(--color-cream);
+}
+
+.text-gradient-berry {
+  background: linear-gradient(115deg, var(--color-berry) 15%, var(--color-berry-dark) 50%, var(--color-berry) 85%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-pad {
+  @apply px-5 sm:px-8 lg:px-16 xl:px-24;
+}
+
+.container-max {
+  @apply mx-auto max-w-7xl;
+}
+
+.card-shadow {
+  box-shadow: 0 2px 8px rgba(58, 36, 32, 0.05), 0 12px 32px -12px rgba(230, 57, 90, 0.18);
+}
+
+.card-shadow-lg {
+  box-shadow: 0 8px 20px rgba(58, 36, 32, 0.06), 0 24px 48px -16px rgba(230, 57, 90, 0.25);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

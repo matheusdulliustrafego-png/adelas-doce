@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <defs>
+    <path id="berry" d="M4 15 Q20 0 36 15 Q34 30 20 40 Q6 30 4 15 Z" />
+    <path id="leaf" d="M12 4 C15 -3 25 -3 28 4 C22 2 18 2 12 4 Z" />
+  </defs>
+  <g fill="#5fb26a" fill-opacity="0.09">
+    <use href="#leaf" transform="translate(30,44) rotate(-14) scale(0.8)" />
+    <use href="#leaf" transform="translate(150,20) rotate(20) scale(0.65)" />
+    <use href="#leaf" transform="translate(95,128) rotate(-6) scale(0.9)" />
+    <use href="#leaf" transform="translate(195,142) rotate(24) scale(0.6)" />
+    <use href="#leaf" transform="translate(10,158) rotate(-18) scale(0.55)" />
+  </g>
+  <g fill="#e6395a" fill-opacity="0.07">
+    <use href="#berry" transform="translate(30,60) rotate(-14) scale(0.8)" />
+    <use href="#berry" transform="translate(150,36) rotate(20) scale(0.65)" />
+    <use href="#berry" transform="translate(95,144) rotate(-6) scale(0.9)" />
+    <use href="#berry" transform="translate(195,158) rotate(24) scale(0.6)" />
+    <use href="#berry" transform="translate(10,174) rotate(-18) scale(0.55)" />
+  </g>
+</svg>
