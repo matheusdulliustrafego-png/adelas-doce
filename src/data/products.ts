@@ -138,7 +138,7 @@ export const products: Product[] = [
     nome: "Caixa de Degustação",
     categoria: "Brigadeiros",
     descricao:
-      "Brigadeiros de 18g para experimentar sabores diferentes na mesma caixa: escolha 2 sabores tradicionais e 2 sabores gourmet.",
+      "Brigadeiros de 18g para experimentar sabores diferentes na mesma caixa: escolha 2 sabores tradicionais (Brigadeiro preto, Brigadeiro branco, Beijinho ou Paçoca) e 2 sabores gourmet (Ninho com Nutella, Maracujá, Churros, Prestígio ou Uva verde com ninho).",
     foto: "/images/caixa-degustacao.jpeg",
     preco: 35,
     produtoEmDestaque: true,
@@ -152,7 +152,7 @@ export const products: Product[] = [
     nome: "Cento de Brigadeiros Tradicionais",
     categoria: "Brigadeiros",
     descricao:
-      "Brigadeiros de festa, 13g cada, nos sabores tradicionais. O clássico que não pode faltar na sua comemoração.",
+      "Brigadeiros de festa, 13g cada, nos sabores tradicionais: Brigadeiro preto, Brigadeiro branco, Beijinho ou Paçoca. O clássico que não pode faltar na sua comemoração.",
     foto: "/images/cento-brigadeiros.jpeg",
     preco: 140,
     produtoEmDestaque: true,
@@ -166,7 +166,7 @@ export const products: Product[] = [
     nome: "Cento de Brigadeiros Gourmet",
     categoria: "Brigadeiros",
     descricao:
-      "Brigadeiros de festa, 13g cada, em sabores gourmet selecionados. Pra impressionar os convidados na sua festa.",
+      "Brigadeiros de festa, 13g cada, em sabores gourmet: Ninho com Nutella, Maracujá, Churros, Prestígio ou Uva verde com ninho. Pra impressionar os convidados na sua festa.",
     foto: "/images/cento-brigadeiros.jpeg",
     preco: 160,
     produtoEmDestaque: true,

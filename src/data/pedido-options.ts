@@ -6,4 +6,7 @@ export const ORDER_PRODUCTS = [
   "Fondue no Copo de Morango",
   "Fondue no Copo de Uva Verde",
   "Fondue no Copo Misto",
+  "Caixa de Degustação",
+  "Cento de Brigadeiros Tradicionais",
+  "Cento de Brigadeiros Gourmet",
 ];
