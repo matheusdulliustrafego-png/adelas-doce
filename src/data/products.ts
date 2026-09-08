@@ -147,6 +147,34 @@ export const products: Product[] = [
     favorito: false,
     disponivel: true,
   }),
+  produto({
+    id: "cento-brigadeiros-tradicional",
+    nome: "Cento de Brigadeiros Tradicionais",
+    categoria: "Brigadeiros",
+    descricao:
+      "Brigadeiros de festa, 13g cada, nos sabores tradicionais. O clássico que não pode faltar na sua comemoração.",
+    foto: "/images/cento-brigadeiros.jpeg",
+    preco: 140,
+    produtoEmDestaque: true,
+    maisVendido: false,
+    novidade: true,
+    favorito: false,
+    disponivel: true,
+  }),
+  produto({
+    id: "cento-brigadeiros-gourmet",
+    nome: "Cento de Brigadeiros Gourmet",
+    categoria: "Brigadeiros",
+    descricao:
+      "Brigadeiros de festa, 13g cada, em sabores gourmet selecionados. Pra impressionar os convidados na sua festa.",
+    foto: "/images/cento-brigadeiros.jpeg",
+    preco: 160,
+    produtoEmDestaque: true,
+    maisVendido: false,
+    novidade: true,
+    favorito: false,
+    disponivel: true,
+  }),
 ];
 
 export function getProductsByCategory(categoria: Category): Product[] {
