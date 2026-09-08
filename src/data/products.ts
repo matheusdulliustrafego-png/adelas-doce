@@ -133,6 +133,20 @@ export const products: Product[] = [
     favorito: false,
     disponivel: true,
   }),
+  produto({
+    id: "caixa-degustacao",
+    nome: "Caixa de Degustação",
+    categoria: "Brigadeiros",
+    descricao:
+      "Brigadeiros de 18g para experimentar sabores diferentes na mesma caixa: escolha 2 sabores tradicionais e 2 sabores gourmet.",
+    foto: "/images/caixa-degustacao.jpeg",
+    preco: 35,
+    produtoEmDestaque: true,
+    maisVendido: false,
+    novidade: true,
+    favorito: false,
+    disponivel: true,
+  }),
 ];
 
 export function getProductsByCategory(categoria: Category): Product[] {
